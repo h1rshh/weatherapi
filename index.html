@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Appp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt=""></button>
+        </div>
+
+        <div class="weather">
+            <img src="https://cdn.pixabay.com/photo/2022/04/12/00/30/weather-7126916_1280.png" alt="" height="150px" width="150px" style="border-radius: 50%; margin-top: 8px;">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="data:image/png;base64,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" alt="" style="border-radius: 50%;" height="120px" width="120px">
+                </div>
+
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+            </div>
+        </div>
+        <div class="col">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/450/289/original/wind-vector-icon.jpg" alt="" style="height: 120px; width: 120px; border-radius: 50%;">
+            <div>
+                <p class="wind">15 km/h</p>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="weather.js"></script>
+</html>
